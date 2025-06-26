@@ -1,0 +1,54 @@
+/* DogGroomingPage.css */
+
+.dog-page-container {
+  background-color: #ffffff;
+  color: #2d3748;
+  font-family: sans-serif;
+  padding: 2.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dog-about {
+  font-size: 0.875rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.dog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dog-title {
+    font-size: 2.5rem;
+  }
+}
+
+.dog-paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.dog-phone {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.dog-button {
+  margin-top: 1.5rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dog-button:hover {
+  background-color: #1e40af;
+}
