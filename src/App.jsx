@@ -1,18 +1,19 @@
-import Footer from "./components/Footer/Footer"
-import Navbar from "./components/Navbar/Navbar"
-import Home from "./pages/Home/Home"
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Services from "./pages/Services/Services";
 
 function App() {
-  
-
   return (
-    <>
-      <Navbar/>
-      <Home/>
-      <Footer/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} /> {/* Placeholder for Services page */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

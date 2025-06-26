@@ -1,11 +1,11 @@
 // File: src/components/Certifications.js
 import React from "react";
 import "./Certifications.css";
-import home1 from "../../../assets/Home1.png";
-import home2 from "../../../assets/Home2.png";
-import home3 from "../../../assets/Home3.png";      
-import home4 from "../../../assets/Home4.png";
-import home5 from "../../../assets/Home5.png";
+import home1 from "../../assets/Home1.png";
+import home2 from "../../assets/Home2.png";
+import home3 from "../../assets/Home3.png";      
+import home4 from "../../assets/Home4.png";
+import home5 from "../../assets/Home5.png";
 
 const Certifications = () => {
   return (

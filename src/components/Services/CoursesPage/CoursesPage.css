@@ -1,0 +1,130 @@
+.courses-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  text-align: center;
+}
+
+.courses-subtitle {
+  color: #5271ff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.courses-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #254edb;
+  margin-bottom: 2rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.course-card {
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  min-height: 300px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  border-color: #2a55ff;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2a55ff;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.course-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #073cc1;
+  margin-bottom: 0.75rem;
+  min-height: 60px;
+}
+
+.course-desc {
+  font-size: 0.9rem;
+  color: #555;
+  min-height: 60px;
+}
+
+.course-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #073cc1;
+  margin: 1rem 0;
+}
+
+.course-price span {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.read-more-btn {
+  background-color: #2a55ff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #103dcc;
+}
+
+.last-center {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+/* Responsive: 2 columns on medium screens */
+@media (max-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .last-center {
+    grid-column: span 2;
+  }
+}
+
+/* Responsive: 1 column on small screens */
+@media (max-width: 600px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  .last-center {
+    grid-column: span 1;
+  }
+
+  .course-card {
+    width: 100%;
+  }
+}
